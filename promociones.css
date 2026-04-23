@@ -1,0 +1,455 @@
+/* ================================================
+   ECLIPSE CINEMA — promociones.css
+   Estilos exclusivos de la página de Promociones
+   Paleta Halcyon: Onyx · Gunmetal · Silver · Teal · Cyan
+   Fuentes: Cinzel + Raleway (Google Fonts)
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* ── Variables ── */
+:root {
+  --negro:         #0B0C10;
+  --negro-medio:   #1F2833;
+  --negro-suave:   #1a2230;
+  --negro-card:    #161d27;
+  --dorado:        #45A29E;
+  --dorado-claro:  #66FCF1;
+  --dorado-oscuro: #2e7a76;
+  --blanco:        #C5C6C7;
+  --gris:          #7a8a99;
+  --fuente-titulo: 'Cinzel', serif;
+  --fuente-cuerpo: 'Raleway', sans-serif;
+}
+
+/* ── Reset base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-family: var(--fuente-cuerpo);
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── Scrollbar personalizada ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--negro-medio);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dorado-oscuro);
+  border-radius: 3px;
+}
+
+/* ════════════════════════════════════
+   HEADER DE PÁGINA
+   ════════════════════════════════════ */
+.promo-header {
+  background: linear-gradient(135deg, #0d0e12 0%, #1a2230 60%, #0f1a1a 100%);
+  border-bottom: 1px solid rgba(102, 252, 241, 0.15);
+  padding: 4.5rem 1.5rem 3.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 80%, rgba(102, 252, 241, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.promo-header-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ── Eyebrow (etiqueta superior) ── */
+.promo-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--dorado);
+  border: 1px solid rgba(69, 162, 158, 0.35);
+  padding: 0.3rem 1rem;
+  border-radius: 2px;
+  margin-bottom: 1.2rem;
+}
+
+/* ── Título principal ── */
+.promo-header h1 {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--dorado-claro);
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+  line-height: 1.15;
+}
+
+.promo-header p {
+  color: var(--gris);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* ════════════════════════════════════
+   SECCIONES DE CONTENIDO
+   ════════════════════════════════════ */
+.promo-section {
+  padding: 4rem 0;
+}
+
+.promo-section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--dorado);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.promo-section-title {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--dorado-claro);
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.promo-section-sub {
+  color: var(--gris);
+  font-size: 0.88rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ════════════════════════════════════
+   TARJETAS DE PROMOCIÓN
+   ════════════════════════════════════ */
+.promo-card {
+  background-color: var(--negro-card);
+  border: 1px solid #222;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.35s, border-color 0.35s, box-shadow 0.35s;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--dorado);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5),
+              0 0 20px rgba(102, 252, 241, 0.06);
+}
+
+/* ── Zona de ícono (cabecera de la card) ── */
+.promo-card-icon {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-card-icon::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(transparent, var(--negro-card));
+  pointer-events: none;
+}
+
+.promo-card-icon i {
+  font-size: 3.5rem;
+  color: var(--dorado);
+  opacity: 0.7;
+  z-index: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.promo-card:hover .promo-card-icon i {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* ── Badge de la card ── */
+.promo-card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  background: var(--dorado-oscuro);
+  color: var(--blanco);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.25rem 0.7rem;
+  border-radius: 3px;
+}
+
+.promo-card-badge.destacada {
+  background: var(--dorado);
+  color: var(--negro);
+}
+
+/* ── Cuerpo de la card ── */
+.promo-card-body {
+  padding: 1.3rem 1.4rem 1.6rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-card-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--dorado);
+  margin-bottom: 0.5rem;
+}
+
+.promo-card-body h3 {
+  font-family: var(--fuente-titulo);
+  font-size: 1.05rem;
+  color: var(--blanco);
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+
+.promo-card-body p {
+  font-size: 0.83rem;
+  color: var(--gris);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+/* ── Detalles al pie de la card ── */
+.promo-card-details {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  color: var(--gris);
+  border-top: 1px solid #222;
+  padding-top: 0.8rem;
+  margin-top: auto;
+}
+
+.promo-card-details span i {
+  color: var(--dorado);
+  margin-right: 4px;
+}
+
+/* ════════════════════════════════════
+   PRECIOS
+   ════════════════════════════════════ */
+.promo-price {
+  font-family: var(--fuente-titulo);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--dorado-claro);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.promo-price-old {
+  font-size: 0.8rem;
+  color: var(--gris);
+  text-decoration: line-through;
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+
+/* ════════════════════════════════════
+   BANNER INTERMEDIO (evento destacado)
+   ════════════════════════════════════ */
+.promo-banner-mid {
+  background: linear-gradient(135deg, #0c1418, #0d1018, #0d1018);
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.promo-banner-mid::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(102, 252, 241, 0.04) 0%, transparent 70%);
+}
+
+.promo-banner-mid .container {
+  position: relative;
+  z-index: 1;
+}
+
+.promo-banner-mid h2 {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--dorado-claro);
+  margin-bottom: 0.5rem;
+}
+
+.promo-banner-mid p {
+  color: var(--gris);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* ════════════════════════════════════
+   TÉRMINOS Y CONDICIONES
+   ════════════════════════════════════ */
+.promo-terms {
+  padding: 3rem 0;
+  border-top: 1px solid #1a1a1a;
+}
+
+.promo-terms h4 {
+  font-family: var(--fuente-titulo);
+  font-size: 1rem;
+  color: var(--dorado);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.promo-terms ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.promo-terms ul li {
+  font-size: 0.82rem;
+  color: var(--gris);
+  padding: 0.4rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.promo-terms ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  width: 6px;
+  height: 6px;
+  background: var(--dorado-oscuro);
+  border-radius: 50%;
+}
+
+/* ════════════════════════════════════
+   BOTONES
+   ════════════════════════════════════ */
+.btn-ec-outline {
+  background: transparent;
+  color: var(--dorado);
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.65rem 1.8rem;
+  border: 1.5px solid var(--dorado);
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn-ec-outline:hover {
+  background-color: var(--dorado);
+  color: var(--negro);
+  transform: translateY(-2px);
+}
+
+/* ════════════════════════════════════
+   ANIMACIONES
+   ════════════════════════════════════ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.ec-fade-in   { animation: fadeInUp 0.7s ease both; }
+.ec-fade-in-1 { animation-delay: 0.1s; }
+.ec-fade-in-2 { animation-delay: 0.2s; }
+.ec-fade-in-3 { animation-delay: 0.3s; }
+.ec-fade-in-4 { animation-delay: 0.4s; }
+.ec-fade-in-5 { animation-delay: 0.5s; }
+.ec-fade-in-6 { animation-delay: 0.6s; }
+
+/* ════════════════════════════════════
+   RESPONSIVE
+   ════════════════════════════════════ */
+@media (max-width: 991px) {
+  .promo-header {
+    padding: 3.5rem 1rem 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-section {
+    padding: 2.5rem 0;
+  }
+
+  .promo-header {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .promo-card-icon {
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .promo-card-body h3 {
+    font-size: 0.95rem;
+  }
+
+  .promo-price {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Películas — CineVerse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="peliculas.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR — Eclipse Cinema
+       ══════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg ec-navbar">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="ec-logo-text navbar-brand" href="index.html">
+        Eclipse<span class="ec-logo-dot"></span><span>Cinema</span>
+      </a>
+
+      <!-- Botón hamburguesa (móvil) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#cartelera">Cartelera</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#estrenos">Estrenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="promociones.html">Promociones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dulceria.html">Dulcería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="peliculas.html">Películas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="historia.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HEADER DE PAGINA -->
+  <div class="page-header">
+    <div class="page-header-inner">
+      <p class="page-eyebrow">Catálogo de películas</p>
+      <h1 class="page-title">En <span>Pantalla</span></h1>
+      <p class="page-desc">Información detallada de cada película en exhibición: sinopsis, elenco completo y ficha
+        técnica.</p>
+    </div>
+  </div>
+
+  <!-- FILTRO -->
+  <div class="filter-bar">
+    <span class="filter-label">Filtrar por</span>
+    <button class="filter-btn active">Todas</button>
+    <button class="filter-btn">Acción</button>
+    <button class="filter-btn">Terror</button>
+    <button class="filter-btn">Drama</button>
+    <button class="filter-btn">Animación</button>
+    <button class="filter-btn">Ciencia Ficción</button>
+    <button class="filter-btn">Evento</button>
+  </div>
+
+  <main>
+
+    <!-- 1. EL DIABLO VISTE A LA MODA 2 -->
+    <section class="movie-entry" data-num="01" id="el-diablo-viste-a-la-moda-2">
+      <div class="movie-poster">
+        <span class="poster-rating-pill">PG-13</span>
+
+        <img src="images/diablo.png" alt="El Diablo Viste a la Moda 2" class="poster-img">
+
+        <span class="price-tag">$8.50</span>
+      </div>
+      <div class="movie-content">
+        <div class="movie-genres">
+          <span class="genre-tag">Comedia</span>
+          <span class="genre-tag">Drama</span>
+        </div>
+        <h2 class="movie-title">El Diablo Viste a la Moda 2</h2>
+        <div class="meta-table">
+          <div class="meta-cell">
+            <div class="meta-key">Director</div>
+            <div class="meta-val">David Frankel</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Duración</div>
+            <div class="meta-val">115 min</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Año</div>
+            <div class="meta-val">2025</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Clasificación</div>
+            <div class="meta-val">PG-13</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">País</div>
+            <div class="meta-val">Estados Unidos</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Idioma</div>
+            <div class="meta-val">Inglés / Subtitulada</div>
+          </div>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Sinopsis</p>
+          <p class="synopsis-body">Andy Sachs regresa al mundo de la moda de alto perfil cuando Miranda Priestly la
+            recluta para un proyecto secreto que podría cambiar el rumbo de Runway para siempre. Entre el glamour de
+            Milán y Nueva York, Andy debe elegir entre su carrera, sus valores y las relaciones que construyó. Una
+            secuela que eleva la tensión entre el poder y la autenticidad.</p>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Elenco</p>
+          <div class="cast-grid">
+            <span class="cast-chip">Meryl Streep</span>
+            <span class="cast-chip">Anne Hathaway</span>
+            <span class="cast-chip">Emily Blunt</span>
+            <span class="cast-chip">Stanley Tucci</span>
+            <span class="cast-chip">Adrian Grenier</span>
+            <span class="cast-chip">Gisele Bündchen</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. HOPPERS: OPERACIÓN CASTOR -->
+    <section class="movie-entry" data-num="02" id="hoppers-operacion-castor">
+      <div class="movie-poster">
+        <span class="poster-rating-pill">PG-13</span>
+
+        <img src="images/hoppers.png" alt="Hoppers: Operación Castor" class="poster-img">
+
+        <span class="price-tag">$8.50</span>
+      </div>
+      <div class="movie-content">
+        <div class="movie-genres">
+          <span class="genre-tag">Acción</span>
+          <span class="genre-tag">Thriller</span>
+        </div>
+        <h2 class="movie-title">Hoppers: Operación Castor</h2>
+        <div class="meta-table">
+          <div class="meta-cell">
+            <div class="meta-key">Director</div>
+            <div class="meta-val">Daniel Chong</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Duración</div>
+            <div class="meta-val">108 min</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Año</div>
+            <div class="meta-val">2025</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Clasificación</div>
+            <div class="meta-val">PG-13</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">País</div>
+            <div class="meta-val">Internacional</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Idioma</div>
+            <div class="meta-val">Inglés / Subtitulada</div>
+          </div>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Sinopsis</p>
+          <p class="synopsis-body">Un equipo de élite conocido como los Hoppers es enviado a una misión encubierta para
+            desmantelar una red criminal internacional bajo el nombre clave "Castor". Cuando las lealtades son puestas a
+            prueba, cada miembro deberá decidir a quién sirve realmente. Acción de alto voltaje que no da respiro desde
+            el primer minuto.</p>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Elenco</p>
+          <div class="cast-grid">
+            <span class="cast-chip">Reparto internacional</span>
+            <span class="cast-chip">Por confirmar</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. PROYECTO FIN DEL MUNDO -->
+    <section class="movie-entry" data-num="03" id="proyecto-fin-del-mundo">
+      <div class="movie-poster">
+        <span class="poster-rating-pill">PG-13</span>
+
+        <img src="images/findelmundo.png" alt="Proyecto fin del mundo" class="poster-img">
+
+        <span class="price-tag">$8.50</span>
+      </div>
+      <div class="movie-content">
+        <div class="movie-genres">
+          <span class="genre-tag">Ciencia Ficción</span>
+          <span class="genre-tag">Suspenso</span>
+        </div>
+        <h2 class="movie-title">Proyecto Fin del Mundo</h2>
+        <div class="meta-table">
+          <div class="meta-cell">
+            <div class="meta-key">Directores</div>
+            <div class="meta-val">Phil Lord, Christopher Miller</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Duración</div>
+            <div class="meta-val">122 min</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Año</div>
+            <div class="meta-val">2025</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Clasificación</div>
+            <div class="meta-val">R — Mayores de 17</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">País</div>
+            <div class="meta-val">Estados Unidos
+            </div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Idioma</div>
+            <div class="meta-val">Inglés / Subtitulada</div>
+          </div>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Sinopsis</p>
+          <p class="synopsis-body">Cuando un científico descubre una señal proveniente del espacio profundo que anuncia
+            el fin de la civilización en 72 horas, un grupo de personas ordinarias debe tomar decisiones
+            extraordinarias. ¿Huir, luchar o simplemente vivir sus últimas horas? Una exploración visceral sobre lo que
+            significa ser humano frente al colapso inminente.</p>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Elenco</p>
+          <div class="cast-grid"><span class="cast-chip">Ryan Gosling</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. JUGADA MAESTRA -->
+    <section class="movie-entry" data-num="04" id="jugada-maestra">
+      <div class="movie-poster">
+        <span class="poster-rating-pill">PG-13</span>
+
+        <img src="images/jugada.png" alt="Jugada Maestra" class="poster-img">
+
+        <span class="price-tag">$8.50</span>
+      </div>
+      <div class="movie-content">
+        <div class="movie-genres">
+          <span class="genre-tag">Thriller</span>
+          <span class="genre-tag">Drama</span>
+        </div>
+        <h2 class="movie-title">Jugada Maestra</h2>
+        <div class="meta-table">
+          <div class="meta-cell">
+            <div class="meta-key">Director</div>
+            <div class="meta-val">John Patton Ford</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Duración</div>
+            <div class="meta-val">112 min</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Año</div>
+            <div class="meta-val">2025</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Clasificación</div>
+            <div class="meta-val">PG-13</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">País</div>
+            <div class="meta-val">Estados Unidos</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Idioma</div>
+            <div class="meta-val">Español / Inglés</div>
+          </div>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Sinopsis</p>
+          <p class="synopsis-body">En el tablero del poder corporativo, una joven estratega descubre que su ascenso
+            meteórico esconde un juego de manipulación que lleva décadas en marcha. Para ganar, tendrá que convertirse
+            en la pieza que nadie vio venir. Un thriller de alta tensión que desnuda los engranajes del mundo
+            empresarial sin piedad.</p>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Elenco</p>
+          <div class="cast-grid"><span class="cast-chip">Glen Powell</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. SUPER MARIO GALAXY -->
+    <section class="movie-entry" data-num="05" id="super-mario-galaxy">
+      <div class="movie-poster">
+        <span class="poster-rating-pill">PG-13</span>
+
+        <img src="images/mario.png" alt="Super Mario Galaxy: La Película" class="poster-img">
+
+        <span class="price-tag">$8.50</span>
+      </div>
+      <div class="movie-content">
+        <div class="movie-genres">
+          <span class="genre-tag">Animación</span>
+          <span class="genre-tag">Aventura</span>
+          <span class="genre-tag">Familiar</span>
+        </div>
+        <h2 class="movie-title">Super Mario Galaxy: La Película</h2>
+        <div class="meta-table">
+          <div class="meta-cell">
+            <div class="meta-key">Directores</div>
+            <div class="meta-val">Aaron Horvath / Michael Jelenic</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Duración</div>
+            <div class="meta-val">98 min</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Año</div>
+            <div class="meta-val">2025</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Clasificación</div>
+            <div class="meta-val">G — Todo público</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">País</div>
+            <div class="meta-val">EE.UU. / Japón</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Estudio</div>
+            <div class="meta-val">Illumination / Nintendo</div>
+          </div>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Sinopsis</p>
+          <p class="synopsis-body">Mario y Luigi se lanzan a una aventura cósmica cuando el Observatorio Comet es
+            atacado por el malvado Bowser. Junto a Rosalina y los Lumas, deberán recolectar las Grand Stars antes de que
+            el universo colapse en la oscuridad eterna. Una experiencia visual deslumbrante cargada de nostalgia y
+            maravilla para todas las edades.</p>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Elenco de voces</p>
+          <div class="cast-grid">
+            <span class="cast-chip">Chris Pratt — Mario</span>
+            <span class="cast-chip">Charlie Day — Luigi</span>
+            <span class="cast-chip">Anya Taylor-Joy — Rosalina</span>
+            <span class="cast-chip">Jack Black — Bowser</span>
+            <span class="cast-chip">Keegan-Michael Key — Toad</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. DONNIE DARKO -->
+    <section class="movie-entry" data-num="06" id="donnie-darko">
+      <div class="movie-poster">
+        <span class="poster-rating-pill">PG-13</span>
+
+        <img src="images/donnie.png" alt="Donnie Darko" class="poster-img">
+
+        <span class="price-tag">$8.50</span>
+      </div>
+      <div class="movie-content">
+        <div class="movie-genres">
+          <span class="genre-tag">Ciencia Ficción</span>
+          <span class="genre-tag">Drama Psicológico</span>
+          <span class="genre-tag">Restreno</span>
+        </div>
+        <h2 class="movie-title">Donnie Darko</h2>
+        <div class="meta-table">
+          <div class="meta-cell">
+            <div class="meta-key">Director</div>
+            <div class="meta-val">Richard Kelly</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Duración</div>
+            <div class="meta-val">113 min</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Año original</div>
+            <div class="meta-val">2001 (Restreno 2025)</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Clasificación</div>
+            <div class="meta-val">R — Mayores de 17</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">País</div>
+            <div class="meta-val">Estados Unidos</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Versión</div>
+            <div class="meta-val">Director's Cut</div>
+          </div>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Sinopsis</p>
+          <p class="synopsis-body">Un adolescente perturbado llamado Donnie Darko escapa milagrosamente de un accidente
+            fatal. Guiado por Frank, un extraño conejo gigante que solo él puede ver, comienza a descubrir los secretos
+            del viaje en el tiempo mientras el mundo a su alrededor se desintegra lentamente. Un clásico de culto de
+            regreso en versión Director's Cut remasterizada.</p>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Elenco</p>
+          <div class="cast-grid">
+            <span class="cast-chip">Jake Gyllenhaal</span>
+            <span class="cast-chip">Jena Malone</span>
+            <span class="cast-chip">Drew Barrymore</span>
+            <span class="cast-chip">Noah Wyle</span>
+            <span class="cast-chip">Patrick Swayze</span>
+            <span class="cast-chip">Maggie Gyllenhaal</span>
+            <span class="cast-chip">Mary McDonnell</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. BTS WORLD TOUR -->
+    <section class="movie-entry" data-num="07" id="bts-world-tour">
+      <div class="movie-poster">
+        <span class="poster-rating-pill">PG-13</span>
+
+        <img src="images/bts.png" alt="BTS World Tour 'ARIRANG'" class="poster-img">
+
+        <span class="price-tag">$8.50</span>
+      </div>
+      <div class="movie-content">
+        <div class="movie-genres">
+          <span class="genre-tag">Evento en Vivo</span>
+          <span class="genre-tag">Concierto</span>
+          <span class="genre-tag">Función única</span>
+        </div>
+        <h2 class="movie-title">BTS World Tour 'ARIRANG' in Goyang: Live Viewing OV</h2>
+        <div class="meta-table">
+          <div class="meta-cell">
+            <div class="meta-key">Artista</div>
+            <div class="meta-val">BTS</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Formato</div>
+            <div class="meta-val">Live Viewing</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Versión</div>
+            <div class="meta-val">OV — Sin subtítulos</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Sede original</div>
+            <div class="meta-val">Estadio Goyang, Corea del Sur</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Tipo</div>
+            <div class="meta-val">Transmisión en tiempo real</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Nota</div>
+            <div class="meta-val">No se admiten llegadas tarde</div>
+          </div>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Descripción del evento</p>
+          <p class="synopsis-body">Transmisión en vivo del concierto mundial de BTS desde el estadio de Goyang, Corea
+            del Sur. Experimenta la euforia de "ARIRANG" en pantalla grande con sonido de cine envolvente. Evento único
+            e irrepetible con acceso a cámaras exclusivas que no se transmiten en streaming doméstico. Las entradas son
+            limitadas y no tienen reposición.</p>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Integrantes</p>
+          <div class="cast-grid">
+            <span class="cast-chip">RM</span><span class="cast-chip">Jin</span><span class="cast-chip">Suga</span>
+            <span class="cast-chip">J-Hope</span><span class="cast-chip">Jimin</span><span class="cast-chip">V</span>
+            <span class="cast-chip">Jungkook</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. LA POSESIÓN DE LA MOMIA -->
+    <section class="movie-entry" data-num="08" id="la-posesion-de-la-momia">
+      <div class="movie-poster">
+        <span class="poster-rating-pill">PG-13</span>
+
+        <img src="images/momia.png" alt="La Posesión de la Momia" class="poster-img">
+
+        <span class="price-tag">$8.50</span>
+      </div>
+      <div class="movie-content">
+        <div class="movie-genres">
+          <span class="genre-tag">Terror</span>
+          <span class="genre-tag">Horror Sobrenatural</span>
+        </div>
+        <h2 class="movie-title">La Posesión de la Momia</h2>
+        <div class="meta-table">
+          <div class="meta-cell">
+            <div class="meta-key">Director</div>
+            <div class="meta-val">Lee Cronin</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Duración</div>
+            <div class="meta-val">95 min</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Año</div>
+            <div class="meta-val">2025</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Clasificación</div>
+            <div class="meta-val">R — Mayores de 17</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">País</div>
+            <div class="meta-val">Estados Unidos</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Idioma</div>
+            <div class="meta-val">Inglés / Subtitulada</div>
+          </div>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Sinopsis</p>
+          <p class="synopsis-body">Cuando un equipo de arqueólogos profana la tumba sellada de un faraón maldito, el
+            espíritu de la momia comienza a tomar posesión de los miembros del grupo uno a uno. Para sobrevivir, deberán
+            descifrar los jeroglíficos que encierran el ritual de exorcismo antes del amanecer. Una historia de terror
+            antiguo que mezcla mitología egipcia con horror psicológico moderno.</p>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Elenco</p>
+          <div class="cast-grid"><span class="cast-chip">Por confirmar</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. MICHAEL -->
+    <section class="movie-entry" data-num="09" id="michael">
+      <div class="movie-poster">
+        <span class="poster-rating-pill">PG-13</span>
+
+        <img src="images/michael.png" alt="Michael" class="poster-img">
+
+        <span class="price-tag">$8.50</span>
+      </div>
+      <div class="movie-content">
+        <div class="movie-genres">
+          <span class="genre-tag">Biopic</span>
+          <span class="genre-tag">Drama Musical</span>
+        </div>
+        <h2 class="movie-title">Michael</h2>
+        <div class="meta-table">
+          <div class="meta-cell">
+            <div class="meta-key">Director</div>
+            <div class="meta-val">Antoine Fuqua</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Duración</div>
+            <div class="meta-val">130 min</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Año</div>
+            <div class="meta-val">2025</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Clasificación</div>
+            <div class="meta-val">PG-13</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">País</div>
+            <div class="meta-val">Estados Unidos</div>
+          </div>
+          <div class="meta-cell">
+            <div class="meta-key">Productor</div>
+            <div class="meta-val">Lionsgate / Estate of MJ</div>
+          </div>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Sinopsis</p>
+          <p class="synopsis-body">La historia definitiva de Michael Jackson: desde su infancia en Gary, Indiana, hasta
+            convertirse en el Rey del Pop. La película explora con profundidad su genio artístico, sus controversias, su
+            soledad y el legado eterno de uno de los íconos más grandes de la cultura popular del siglo XX. Una visión
+            íntima y sin filtros aprobada por la familia Jackson.</p>
+        </div>
+        <div class="section-block">
+          <p class="section-heading">Elenco</p>
+          <div class="cast-grid">
+            <span class="cast-chip">Jaafar Jackson — Michael Jackson</span>
+            <span class="cast-chip">Colman Domingo — Joe Jackson</span>
+            <span class="cast-chip">Nia Long — Katherine Jackson</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER — Eclipse Cinema
+       Copiar este bloque <footer> completo
+       en cada página del proyecto.
+       ══════════════════════════════════════ -->
+  <footer class="ec-footer">
+    <div class="container">
+
+      <!-- Columnas del footer -->
+      <div class="row g-4 mb-2">
+
+        <!-- Col 1: Sobre el cine + redes sociales -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="ec-footer-logo">
+            Eclipse<span> Cinema</span>
+          </a>
+          <p class="ec-footer-desc">
+            Tu experiencia cinematográfica de élite en El Salvador.
+            Salas de última generación, sonido envolvente y la mejor
+            selección de películas del año.
+          </p>
+          <div class="ec-redes">
+            <a href="#" class="ec-red" title="Facebook" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="ec-red" title="Instagram" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="ec-red" title="Twitter / X" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="ec-red" title="YouTube" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="#" class="ec-red" title="TikTok" aria-label="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Explorar -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5>Explorar</h5>
+          <ul>
+            <li><a href="index.html#cartelera">Cartelera</a></li>
+            <li><a href="index.html#estrenos">Estrenos</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="dulceria.html">Dulcería</a></li>
+            <li><a href="peliculas.html">Películas</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Información -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5>Info</h5>
+          <ul>
+            <li><a href="historia.html">Nosotros</a></li>
+            <li><a href="historia.html">Misión y Visión</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Datos de contacto -->
+        <div class="col-lg-4 col-md-6 ec-footer-contacto">
+          <h5>Contacto</h5>
+          <div class="ec-contacto-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Centro Comercial Metrocentro, Boulevard de los Héroes, San Salvador</span>
+          </div>
+          <div class="ec-contacto-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>(503) 2222-3333</span>
+          </div>
+          <div class="ec-contacto-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>info@eclipsecinema.com.sv</span>
+          </div>
+          <div class="ec-contacto-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Lunes a Domingo: 10:00 – 22:00</span>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+
+      <!-- Línea divisora -->
+      <hr class="ec-footer-divider" />
+
+      <!-- Pie de página -->
+      <div class="ec-footer-bottom">
+        <p>&copy; 2026 <span>Eclipse Cinema</span>. Todos los derechos reservados.</p>
+        <div class="ec-footer-bottom-links">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>

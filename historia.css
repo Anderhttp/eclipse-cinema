@@ -1,0 +1,237 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+
+--negro: #0B0C10;          /* Fondo principal */
+--negro-medio: #1F2833;    /* Navbar / Footer */
+--negro-suave: #2C3E50;    /* Bordes / Hover */
+
+--blanco: #C5C6C7;         /* Texto */
+
+--dorado: #45A29E;         /* Títulos */
+--dorado-claro: #66FCF1;   /* Hover */
+
+--gris: #7a8a99;
+
+}
+
+*,
+*::before,
+*::after {
+
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+
+
+body {
+
+background-color: var(--negro);
+color: var(--blanco);
+
+font-family: 'Raleway', sans-serif;
+
+min-height: 100vh;
+
+}
+
+.ec-navbar {
+
+background-color: var(--negro-medio);
+
+border-bottom: 1px solid rgba(102,252,241,0.2);
+
+padding: 0.6rem 0;
+
+position: sticky;
+
+top: 0;
+
+z-index: 1050;
+
+}
+
+
+.ec-logo-text {
+
+font-family: 'Cinzel', serif;
+
+font-size: 1.3rem;
+
+font-weight: 700;
+
+color: var(--dorado-claro) !important;
+
+letter-spacing: 2px;
+
+}
+
+.ec-logo-text span {
+
+color: var(--blanco);
+
+}
+
+
+.ec-logo-dot {
+
+display: inline-block;
+
+width: 8px;
+height: 8px;
+
+background: var(--dorado);
+
+border-radius: 50%;
+
+margin: 0 4px 2px;
+
+}
+
+
+.nav-link {
+
+color: var(--blanco) !important;
+
+font-size: 0.78rem;
+
+font-weight: 600;
+
+letter-spacing: 1.5px;
+
+text-transform: uppercase;
+
+padding: 0.5rem 0.9rem !important;
+
+transition: 0.3s;
+
+}
+
+.nav-link:hover,
+.nav-link.active {
+
+color: var(--dorado-claro) !important;
+
+background-color: rgba(102,252,241,0.06);
+
+}
+
+/* Botón hamburguesa */
+
+.navbar-toggler {
+
+border-color: rgba(102,252,241,0.4) !important;
+
+}
+
+.carousel-img {
+
+height: 500px;
+
+object-fit: cover;
+
+}
+
+.titulo-cine {
+
+font-family: 'Cinzel', serif;
+
+font-size: 48px;
+
+font-weight: 700;
+
+color: var(--dorado-claro);
+
+margin-bottom: 10px;
+
+}
+
+.texto-historia {
+
+max-width: 650px;
+
+font-size: 18px;
+
+color: var(--blanco);
+
+line-height: 1.6;
+
+}
+
+
+.card {
+
+background-color: var(--negro-medio);
+
+border: 1px solid var(--negro-suave);
+
+color: var(--blanco);
+
+transition: 0.3s;
+
+}
+
+
+.card:hover {
+
+transform: translateY(-6px);
+
+box-shadow: 0px 0px 15px rgba(102,252,241,0.15);
+
+}
+
+
+.card-img-top {
+
+height: 250px;
+
+object-fit: cover;
+
+}
+
+
+.card-title {
+
+color: var(--dorado);
+
+font-family: 'Cinzel', serif;
+
+}
+
+
+.card-text {
+
+color: var(--blanco);
+
+font-size: 15px;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+.carousel-img {
+
+height: 350px;
+
+}
+
+.titulo-cine {
+
+font-size: 32px;
+
+}
+
+.texto-historia {
+
+font-size: 16px;
+
+}
+
+}
